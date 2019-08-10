@@ -5,7 +5,6 @@ const getArticles = (_, res) =>
     articles: Array.from({ length: 200 }, () => data.article()),
   });
 
-
 module.exports = {
   getArticles,
 };
