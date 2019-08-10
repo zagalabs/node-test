@@ -4,7 +4,8 @@
   "description": "Node.js Technical Test",
   "main": "index.js",
   "scripts": {
-    "start": "node .",
+    "lint": "eslint -f codeframe .",
+    "start": "nodemon .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +20,14 @@
     "express": "^4.17.1",
     "faker": "^4.1.0",
     "helmet": "^3.20.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2"
   }
 }
