@@ -6,3 +6,8 @@ extends:
 env:
   node: true
   jest: true
+rules:
+  import/no-extraneous-dependencies:
+    - error
+    - devDependencies:
+      - './config/test.setup.js'
